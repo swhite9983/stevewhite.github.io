@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steve White • Cybersecurity & IT</title>
+  <meta name="description" content="Steve White – Cybersecurity & IT professional portfolio: certifications, projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#101722; --muted:#a6b1c2; --text:#e6eefc; --accent:#7dd3fc; --accent2:#a78bfa;
+      --ring: 0 0 0 3px rgba(125,211,252,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; scroll-behavior:smooth}
+    a{color:var(--accent)}
+    .container{width:min(1120px,92%); margin-inline:auto}
+    header{position:sticky; top:0; backdrop-filter:saturate(140%) blur(8px); background:rgba(11,15,20,.7); border-bottom:1px solid rgba(255,255,255,.06); z-index:30}
+    nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{font-weight:800; letter-spacing:.4px}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#05121f; font-weight:700; border-radius:999px; text-decoration:none}
+    .links a{margin-left:18px; color:var(--muted); text-decoration:none; font-weight:600}
+    .links a:hover{color:var(--text)}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:36px; padding:56px 0 40px}
+    .hero h1{font-size:clamp(28px,6vw,48px); margin:0 0 8px}
+    .hero p{color:var(--muted); line-height:1.6}
+    .card{background:linear-gradient(180deg,#0e1521,#0c1320); border:1px solid rgba(255,255,255,.06); border-radius:20px; padding:22px}
+    .grid{display:grid; gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    @media (max-width:900px){.hero{grid-template-columns:1fr} .grid.cols-3{grid-template-columns:1fr 1fr} .grid.cols-4{grid-template-columns:1fr 1fr}} 
+    @media (max-width:600px){.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
+    h2{margin:42px 0 12px; font-size:28px}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius:12px; background:#0c1420; border:1px solid rgba(255,255,255,.06)}
+    .badge small{color:var(--muted)}
+    .resume-btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; background:var(--text); color:#0a111b; font-weight:800; text-decoration:none}
+    .resume-btn:focus{outline:none; box-shadow:var(--ring)}
+    .hero-blob{aspect-ratio:1/1; border-radius:24px; background:radial-gradient(circle at 30% 20%,rgba(167,139,250,.45),transparent 40%), radial-gradient(circle at 70% 70%,rgba(125,211,252,.45),transparent 45%), #0c1420; border:1px solid rgba(255,255,255,.06)}
+    section{padding:10px 0 16px}
+    .list{display:flex; flex-wrap:wrap; gap:10px}
+    .list .item{padding:10px 12px; border-radius:10px; border:1px dashed rgba(255,255,255,.08); color:var(--muted)}
+    .project{display:grid; grid-template-columns:140px 1fr; gap:16px; align-items:center}
+    .project img{width:100%; height:100%; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,.08)}
+    .project h3{margin:0}
+    .contact{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .contact input, .contact textarea{width:100%; padding:12px 14px; border-radius:12px; background:#0c1420; color:var(--text); border:1px solid rgba(255,255,255,.08)}
+    .contact button{padding:12px 14px; border-radius:12px; border:0; font-weight:800; background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#05121f}
+    footer{margin:40px 0 28px; color:var(--muted); text-align:center}
+    .sr{position:absolute; left:-10000px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Steve White</div>
+        <div class="links" role="navigation" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#certs">Certifications</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Hello, I'm Steve White</h1>
+        <p><strong>Information Security Specialist</strong> in the Orlando market at AdventHealth. Air Force veteran turned IT pro. I build secure networks, harden systems, and make life easier for clinicians by keeping tech reliable and safe.</p>
+        <div class="list" style="margin-top:14px">
+          <span class="badge">Currently studying: <small>ISC2 SSCP</small></span>
+          <span class="badge">Open to: <small>Security Engineering • GRC • SOC</small></span>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:18px">
+          <!-- Replace ./resume.pdf with your actual file path in the repo -->
+          <a class="resume-btn" href="./Steve-White-Resume.pdf" target="_blank" rel="noopener">📄 View Résumé</a>
+          <a class="pill" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn ↗</a>
+          <a class="pill" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-blob" aria-hidden="true"></div>
+    </section>
+
+    <section id="certs">
+      <h2>Certifications</h2>
+      <div class="grid cols-4">
+        <!-- Keep this list truthful & edit as needed -->
+        <div class="card"><strong>ISC2 • CC</strong><br><small>Certified in Cybersecurity</small></div>
+        <div class="card"><strong>CompTIA • Security+</strong><br><small>SY0-701</small></div>
+        <div class="card"><strong>CompTIA • CySA+</strong></div>
+        <div class="card"><strong>CompTIA • PenTest+</strong></div>
+        <div class="card"><strong>CompTIA • Network+</strong></div>
+        <div class="card"><strong>CompTIA • A+</strong></div>
+        <div class="card"><strong>CompTIA • Server+</strong></div>
+        <div class="card"><strong>CompTIA • Cloud+</strong></div>
+        <div class="card"><strong>ITIL® 4 • Foundation</strong></div>
+        <div class="card"><strong>LPI • Linux Essentials</strong></div>
+        <div class="card"><strong>CompTIA • Linux+</strong></div>
+        <div class="card"><strong>In Progress • SSCP</strong></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="list">
+        <span class="item">Network Segmentation (VLANs, ACLs)</span>
+        <span class="item">Windows Server 2019 (AD, DNS, DHCP, GPO)</span>
+        <span class="item">Cisco Routers & Catalyst (IOS)</span>
+        <span class="item">SIEM (basic)</span>
+        <span class="item">Vulnerability Management</span>
+        <span class="item">Incident Response Fundamentals</span>
+        <span class="item">Scripting (PowerShell, Bash basics)</span>
+        <span class="item">Virtualization (Hyper-V/VMware)</span>
+        <span class="item">Wireless (WLC/AP provisioning)</span>
+        <span class="item">GRC Concepts (NIST CSF, CIS Controls)</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card project">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop" alt="Network rack" />
+          <div>
+            <h3>Enterprise-Style Home Lab</h3>
+            <p>Built an isolated multi-VLAN lab with Cisco 3945/1111-8P, Catalyst 3850s, Windows Server 2019 AD DS, WLC/APs, DMZ, VPN, and logging. Used this to practice segmentation, least privilege, and change control.</p>
+            <p><a href="#">Docs (coming soon)</a></p>
+          </div>
+        </article>
+        <article class="card project">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop" alt="Terminal window" />
+          <div>
+            <h3>Windows Hardening Playbook</h3>
+            <p>Checklist-driven baseline (local policies, firewall, Defender, update ring, BitLocker), plus scripts to audit common misconfigs in small clinics.</p>
+            <p><a href="#">GitHub (soon)</a></p>
+          </div>
+        </article>
+        <article class="card project">
+          <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=800&auto=format&fit=crop" alt="Abstract security" />
+          <div>
+            <h3>Blue-Team Runbooks</h3>
+            <p>Wrote quick-response checklists for phishing, suspected malware, lost/stolen device, and account compromise. Emphasis on safe isolation and comms.</p>
+            <p><a href="#">PDF (soon)</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Who I Am</h2>
+      <div class="card">
+        <p>U.S. Air Force veteran and hands-on IT specialist in healthcare. I bridge frontline support with security best practices: building reliable infrastructure, documenting processes, and protecting patient care from disruptions. Outside of work I’m in the gym six days a week and mentor teammates on certification paths.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form class="contact card" onsubmit="event.preventDefault(); window.location = 'mailto:youremail@example.com?subject=Portfolio%20Inquiry&body=Hi%20Steve,';">
+        <div>
+          <label class="sr" for="name">Name</label>
+          <input id="name" placeholder="Your name" />
+        </div>
+        <div>
+          <label class="sr" for="email">Email</label>
+          <input id="email" placeholder="Your email" type="email" />
+        </div>
+        <div style="grid-column:1/-1">
+          <label class="sr" for="msg">Message</label>
+          <textarea id="msg" rows="4" placeholder="How can I help?"></textarea>
+        </div>
+        <div style="grid-column:1/-1; display:flex; gap:10px; align-items:center">
+          <button type="submit">Send Email</button>
+          <small style="color:var(--muted)">This opens your email client.</small>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Steve White. Built with ❤ and vanilla HTML/CSS.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
